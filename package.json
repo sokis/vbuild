@@ -14,7 +14,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "jest && xo **/lib/** bin/*.js"
+    "test": "jest && xo **/lib/** bin/*.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": "bin/vbuild.js",
   "files": [
@@ -102,7 +104,8 @@
     "webpack-hot-middleware": "^2.13.2",
     "webpack-livereload-plugin": "^0.9.0",
     "webpack-merge": "^0.17.0",
-    "webpack-notifier": "^1.3.2"
+    "webpack-notifier": "^1.3.2",
+    "snyk": "^1.41.1"
   },
   "jestConfig": {
     "testEnvironment": "node"
@@ -111,5 +114,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
