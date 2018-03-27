@@ -69,7 +69,7 @@
     "css-loader": "^0.25.0",
     "detect-installed": "^1.0.4",
     "detect-port": "^1.0.5",
-    "eslint": "^3.8.1",
+    "eslint": "^4.18.2",
     "eslint-config-vue": "^2.0.1",
     "eslint-loader": "^1.6.0",
     "eslint-plugin-vue": "^1.0.0",
